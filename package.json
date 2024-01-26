@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ext .ts .",
-    "build": "node bin/proto && rimraf dist && tsc -b",
+    "build": "npx ts-node bin/proto && rimraf dist && tsc -b",
     "start": "node dist/server",
     "client": "node dist/client",
     "health": "node dist/health"
@@ -33,6 +33,7 @@
     "grpc-tools": "^1.12.4",
     "protobufjs": "^7.2.6",
     "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
     "ts-proto": "^1.167.1",
     "typescript": "^5.3.3"
   },
